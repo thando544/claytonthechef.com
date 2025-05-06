@@ -13,7 +13,7 @@ const toggle = document.getElementById('menu-toggle');
     socials.classList.toggle('show');
   });
 
-  // Scroll behavior
+  //*==========================Scroll behavior==============================*/
   let lastScrollTop = 0;
 
   window.addEventListener('scroll', function() {
@@ -30,11 +30,10 @@ const toggle = document.getElementById('menu-toggle');
         navLinks.style.pointerEvents = "auto";
       }
     }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // for mobile or negative scrolling
+lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // for mobile or negative scrolling
   });
 
-/*========================bannerslider===============================*/
+/*========================reecipes-section__slider===============================*/
 let currentSlide = 1;
   showSlide(currentSlide);
 
@@ -59,6 +58,7 @@ dots[i].className = dots[i].className.replace(" active", "");
 slides[currentSlide - 1].style.display = "block";
 dots[currentSlide - 1].className += " active";
   }
+
 /*===========================portfolio scroll effect==========================*/
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -127,8 +127,19 @@ const name = document.getElementById('name').value;
    document.getElementById('contactForm').reset();
 });
 
-/*==================navbar activation==============================*/
+/*==================appear==============================*/
+function toggleReadMore() {
+  var dots = document.getElementById("dots");
+  var more = document.getElementById("more");
+  var btn = document.getElementById("myBtn");
 
-
-
- 
+  if (more.style.display === "inline") {
+    more.style.display = "none";
+    dots.style.display = "inline";
+    btn.textContent = "Read more";
+  } else {
+    more.style.display = "inline";
+    dots.style.display = "none";
+    btn.textContent = "Read less";
+  }
+}
