@@ -51,7 +51,7 @@ max-width: 100%;
 #nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 #nav-links li a {
@@ -568,65 +568,10 @@ iframe {
   margin-bottom: 15px;
 }
 
-/* Form */
-form {
-  margin-top: 20px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #ffffff;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 15px;
-  border-radius: 12px;
-  border-bottom: 1px solid #ccc;
-  background: transparent;
-  font-size: 16px;
-  transition: border-color 0.3s;
-}
-
-input:focus, textarea:focus {
-  border-color: #555;
-  outline: none;
-}
-
-/* Submit Button */
-.btn-submit {
-  background: linear-gradient(to right, #111, #555);
-  color: white;
-  padding: 14px 40px;
-  border: none;
-  border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.4s, transform 0.3s;
-}
-
-.btn-submit:hover {
-  background: linear-gradient(to right, #6e5b5b, #111);
-  transform: translateY(-3px);
-}
-
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-/* Responsive */
-
-
-
 /*============================================PORTFOLIO=============================================*/
 .image-container {
   opacity: 0;
@@ -946,10 +891,14 @@ button:hover {
     width: 100%;
     height: auto;
 }
+#nav-links ul {
+display: none;
+}
+
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
   .tabs{
     width: 90%;
   }
@@ -1012,7 +961,7 @@ margin-bottom: 5px;
 
   .content.active {
     --gap: 1px;
-    --num-cols: 5;
+    --num-cols: 3;
     --row-height: 300px;
     box-sizing: border-box;
     padding: var(--gap);
@@ -1022,29 +971,46 @@ margin-bottom: 5px;
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
   }
-  
-
-  .container {
+.container {
     max-width: 800px;
     margin: auto;
   }
 
-
-  .offerings-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-    margin-bottom: 60px;
-  }
-
-  .about-section {
-    width: 100%;
-    padding: 50px 0px;
-    background-color: #000000;
-  }
-
+.offerings-grid {
+display: grid;
+grid-template-columns: auto auto;
+gap: 30px;
+margin-bottom: 60px;
 }
-/* For small screens (smartphones, max-width: 768px) */
+
+.about-section {
+width: 100%;
+padding: 50px 0px;
+background-color: #000000;
+}
+
+/*=================hamburger-menu=================*/
+.menu-toggle {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+height: 90px;
+width: 90px;
+}
+
+.menu-toggle span {
+  width: 35px;
+  gap: 6px;
+  height: 6px;
+  background: #000000;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+}
+/*=============tablet-to-small-devices===============*/
 @media (max-width: 768px) {
  .logo{
   width: 60px;
@@ -1141,6 +1107,8 @@ justify-content: center;
   gap: var(--gap);
 }
 
+
+
 }
 
 
@@ -1166,6 +1134,8 @@ justify-content: center;
 .about__me h1{
 font-size: 1.2rem;
 }
+
+/*===============portfolio-section===============*/
 .portfolio h1{
 font-size: 1.5em;
 }
@@ -1429,7 +1399,12 @@ justify-content: center;
 
 
   .tabs{
-    width: 90%;
+    width: 70%;
+    font-size: 9px;
+    padding-right: 90px;
+  }
+  .tab:hover{
+    background-color: #007BFF;
   }
  
 }
