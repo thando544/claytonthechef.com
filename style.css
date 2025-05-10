@@ -107,8 +107,11 @@ img {
 .menu-toggle {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   cursor: pointer;
+   margin: 5px 0;
+  transition: 0.4s ease;
+  transform-origin: center;
 }
 
 .menu-toggle span {
@@ -116,12 +119,12 @@ img {
   height: 3px;
   background: #333;
   border-radius: 2px;
-  transition: all 0.3s;
+ 
 }
 
 /*==========================Menu toggle active================================*/
 .menu-toggle.active span:nth-child(1) {
-  transform:  rotate(-45deg) translateY(16px);
+  transform: translateY(12px) rotate(-45deg);
 
 }
 
@@ -130,7 +133,7 @@ img {
 }
 
 .menu-toggle.active span:nth-child(3) {
-  transform: rotate(45deg) translateY(-15px);
+  transform: translateY(-12px) rotate(45deg);
 
 }
 
@@ -1512,6 +1515,16 @@ button:hover {
   .portfolio h2 {
     font-size: 19px;
     margin-bottom: 1rem;
+  }
+
+  .nav__socials.show{
+    background-color: #ffffff94;
+    display: flex;
+    align-items: flex-end;
+    width: 70px;
+    right: -20px;
+    top: 90px;
+    position: absolute;
   }
 
 
