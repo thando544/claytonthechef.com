@@ -1662,6 +1662,7 @@ iframe {
   }
   .contact-section{
     border: 2px solid red;
+    width: 90%;
   }
   .nav__socials.show{
     background-color: #ffffff94;
