@@ -114,7 +114,7 @@ function myFunction() {
     var element = document.portfolio;
     element.classList.toggle("dark-mode");
   }
-  +
+  
 /*==================appear==============================*/
 function toggleReadMore() {
   var dots = document.getElementById("dots");
@@ -131,3 +131,22 @@ function toggleReadMore() {
     btn.textContent = "Read less";
   }
 }
+
+
+
+
+function openModal(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// Close modals when clicking outside content
+window.onclick = function(e) {
+  ['modal1', 'modal2'].forEach(id => {
+    const modal = document.getElementById(id);
+    if (e.target === modal) modal.style.display = 'none';
+  });
+};

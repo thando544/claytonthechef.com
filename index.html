@@ -31,6 +31,35 @@
 <li><a href="#portfolio">Food Portfolio</a></li>
 <li><a href="#contact-me__viaallplatiforms/10">Contact</a></li>
 </ul>
+
+<div class="dropdown">
+    <button class="dropdown-toggle">Menu</button>
+    <div class="dropdown-menu">
+      <a href="#regular-link">Regular Link</a>
+      <button onclick="openModal('modal1')">Open Modal 1</button>
+      <button onclick="openModal('modal2')">Open Modal 2</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+    <h2>Modal 1 Title</h2>
+    <p>This is the content of Modal 1.</p>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+    <h2>Modal 2 Title</h2>
+    <p>This is the content of Modal 2.</p>
+  </div>
+</div>
+
 <ul class="nav__socials">
 <li><a href="https://www.facebook.com/claytonmpofu.sikhosini.3/"><box-icon type='logo' name='facebook-circle'></box-icon></a></li>
 <li><a href="https://www.linkedin.com/in/clayton-mpofu-a434b9105/"><box-icon type='logo' name='linkedin'></box-icon></a></li>
@@ -175,43 +204,43 @@
 <div class="tab-content">
 <div class="content" id="tab1">
 <div class="image-container">
-<img src="images/irish breskfst recipes.jpeg" height="300px" loading="lazy"  alt="food-portfolio__images" class="responsive-image" >
+<img src="images/starters/starter1.jpg" height="300px" loading="lazy"  alt="food-portfolio__images" class="responsive-image" >
 <div class="overlay-text">Irish Breskfast</div>
 </div>
 <div class="image-container">
-<img src="images/Delicious Avocado & Chili Flake Ricotta Toast Recipes You’ll Love.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter2.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Dish name</div>
 </div>
 <div class="image-container">
-<img src="images/Full English Breakfast.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter3.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Dish Name</div>
 </div>
 <div class="image-container">
-<img src="images/Gordon Ramsay Butter Chicken.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter4.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text H</div>
 </div>
 <div class="image-container">
-<img src="images/make the Full Irish at home_.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter5.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text Here</div>
 </div>
 <div class="image-container">
-<img src="images/shakshuka egg.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter6.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text Here</div>
 </div>
 <div class="image-container">
-<img src="images/Chef Gordon Ramsay 🍰🍔🍖 _ Chicken Wellingtons _ Facebook.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter7.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text Here</div>
 </div>
 <div class="image-container">
-<img src="images/520ab0c2-83d9-4f1a-9349-736b3c75a886.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter8.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text Here</div>
 </div>
 <div class="image-container">
-<img src="images/60849dee-411e-41e0-ae95-d4d3a6b685b0.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+<img src="images/starters/starter9.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text Here</div>
 </div>
 <div class="image-container">
- <img src="images/Elegant Mornings_ French Breakfast Recipes Unveiled 🥐.jpeg" height="300px"  alt="Sample Image" class="responsive-image">
+ <img src="images/starters/starter10.jpg" height="300px"  alt="Sample Image" class="responsive-image">
 <div class="overlay-text">Your Text Here</div>
 </div>
 </div>
@@ -422,20 +451,25 @@
 </div>
 </section>
 <!--===============================contact section=========================-->
-<section class="contact-section" id="contact-me__viaallplatiforms/10">
-<h2>Contact Me</h2>
-<form  action="https://formsubmit.co/sikhosinimpofu@gmail.com" method="POST" />
-<label for="name">Name:</label>
-<input type="text" id="name" name="name" required>
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" required>
-<label for="subject">Subject:</label>
-<input type="text" id="subject" name="subject" required>
-<label for="message">Message:</label>
-<textarea id="message" name="message" rows="5" required></textarea>
-<button class="submit type="submit">Send Message</button>
-</form>
-</section>
+<section class="contact-section" id="contact-me">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/sikhosinimpofu@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button class="submit-btn" type="submit">Send Message</button>
+    </form>
+  </section>
 <!--====================================footer=====================================-->
 <footer class="chef-footer">
     <div class="footer-content">
