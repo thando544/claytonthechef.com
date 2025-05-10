@@ -1660,6 +1660,9 @@ iframe {
   textarea{
     width: 90%;
   }
+  .contact-section{
+    border: 2px solid red;
+  }
   .nav__socials.show{
     background-color: #ffffff94;
     display: flex;
