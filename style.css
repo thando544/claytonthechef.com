@@ -884,7 +884,8 @@ iframe {
 
 .contact-section input,
 .contact-section textarea {
-  width: 100%;
+  width: 90%;
+  resize: none;
   padding: 12px 14px;
   margin-top: 6px;
   border: 1px solid #ccc;
