@@ -1656,6 +1656,10 @@ iframe {
     margin-bottom: 1rem;
   }
 
+  input,
+  textarea{
+    width: 90%;
+  }
   .nav__socials.show{
     background-color: #ffffff94;
     display: flex;
